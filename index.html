@@ -671,7 +671,13 @@
         "This is why John Adams didn't support expanding suffrage",
         "You just nullified that question like Calhoun",
         "Even Benedict Arnold wouldn’t betray the facts like that",
-        "I'm feeling a Great Depression from your score"
+        "I'm feeling a Great Depression from your score",
+        "You just made a bigger mistake than Britain taxing tea",
+        "Your logic is shakier than the stock market on Black Tuesday",
+        "That answer was so off, even Manifest Destiny wouldn’t claim it",
+        "The Know-Nothing Part knew more then this",
+        "That was the historical equivalent of ‘separate but equal’",
+        "Don't worry, Avi would've definitely gotten that wrong too"
       ];
       const questionText = document.getElementById("question-text");
       const optionsDiv = document.getElementById("options");
@@ -764,10 +770,10 @@
       });
       function showSpinResult(s1, s2, s3) {
         if (s1 === s2 && s2 === s3) {
-          updateMoney(100);
-          resultDiv.textContent = `🎉 JACKPOT! Three ${s1}! You won $100!`;
+          updateMoney(500);
+          resultDiv.textContent = `🎉 JACKPOT! Three ${s1}! You won $500!`;
         } else if (s1 === s2 || s2 === s3 || s1 === s3) {
-          updateMoney(10);
+          updateMoney(15);
           resultDiv.textContent = `✨ Nice Match! Two matching symbols! You won $10!`;
         } else {
           resultDiv.textContent = "😞 No match this time. Try again!";
