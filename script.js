@@ -546,7 +546,7 @@ const questionsOriginal = [
         "That answer’s as shaky as the Missouri Compromise",
         "This is why John Adams didn't support expanding suffrage",
         "You just nullified that question like Calhoun",
-        "Even Benedict Arnold wouldn’t betray the facts like that"
+        "Even Benedict Arnold wouldn’t betray the facts like that",
         "I'm feeling a Great Depression from your score"
       ];
       const questionText = document.getElementById("question-text");
