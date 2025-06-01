@@ -644,7 +644,16 @@
         }
         return arr;
       }
-      let questions = shuffleArray(questionsOriginal);
+
+      let validQuestions = [];
+      for (var i=0; i<questionsOriginal.length; i++) {
+        if (questionsOriginal[i]["question"] != "") {
+          validQuestions.push(questionsOriginal[i]);
+        }
+      }
+      
+      let questions = shuffleArray(validQuestions);
+      //let questions = shuffleArray(questionsOriginal);
       let currentQuestionIndex = 0;
       let selectedOption = null;
       let spinInProgress = false;
